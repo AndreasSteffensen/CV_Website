@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\steff\\Desktop\\Projekter\\CV_Website\\Source\\AndreasSteffensenCV\\AndreasSteffensenCV.Server\\..\\andreassteffensencv.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}
