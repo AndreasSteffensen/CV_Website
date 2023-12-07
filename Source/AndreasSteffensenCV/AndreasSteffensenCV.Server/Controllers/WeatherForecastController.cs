@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AndreasSteffensenCV.Server.Controllers
 {
+    /*
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -30,4 +31,5 @@ namespace AndreasSteffensenCV.Server.Controllers
             .ToArray();
         }
     }
+    */
 }

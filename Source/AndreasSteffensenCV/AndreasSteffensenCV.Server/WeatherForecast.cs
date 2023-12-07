@@ -1,5 +1,6 @@
 namespace AndreasSteffensenCV.Server
 {
+    /*
     public class WeatherForecast
     {
         public DateOnly Date { get; set; }
@@ -10,4 +11,5 @@ namespace AndreasSteffensenCV.Server
 
         public string? Summary { get; set; }
     }
+    */
 }
