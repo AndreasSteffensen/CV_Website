@@ -16,6 +16,7 @@ commands on Raspberry pi to setup dependencies
 
 	export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
+/ sudo apt install nginx
 
 / npm install -g npm 
 / sudo apt install nodejs
@@ -30,3 +31,4 @@ commands on Raspberry pi to setup dependencies
 / npm install -g @angular/cli
 
 / git clone https://github.com/AndreasSteffensen/CV_Website.git
+

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AndreasSteffensenCV.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14f963a9f02be05b088930816ac22be7059b336f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4338ba2022c03b633886f64507acb907e6eac9f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AndreasSteffensenCV.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AndreasSteffensenCV.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
