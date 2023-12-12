@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+/*import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 interface WeatherForecast {
@@ -13,6 +13,7 @@ interface WeatherForecast {
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
 
@@ -35,3 +36,4 @@ export class AppComponent implements OnInit {
 
   title = 'andreassteffensencv.client';
 }
+*/

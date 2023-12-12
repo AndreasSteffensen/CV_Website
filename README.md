@@ -32,3 +32,6 @@ commands on Raspberry pi to setup dependencies
 
 / git clone https://github.com/AndreasSteffensen/CV_Website.git
 
+/ sudo apt install geomview
+
+/ sudo cp -r ~/CV_Website/Publish/ /var/www/CV_Website
