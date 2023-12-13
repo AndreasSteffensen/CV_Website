@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AndreasSteffensenCV.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4338ba2022c03b633886f64507acb907e6eac9f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7d28b361ff48a83fff7f3ed42139a9d78f00c48")]
 [assembly: System.Reflection.AssemblyProductAttribute("AndreasSteffensenCV.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AndreasSteffensenCV.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
