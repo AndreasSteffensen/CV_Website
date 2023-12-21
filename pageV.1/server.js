@@ -14,3 +14,5 @@ app.get('/', (req, res) => {
 
     res.sendFile(path.join('./', '/index.html'));
 });
+
+app.listen(5000, () => console.log('http://localhost:5000/'));
