@@ -4,11 +4,25 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const now = new Date();
+
+const year = now.getFullYear();
+const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
+const day = now.getDate().toString().padStart(2, '0');
+const hours = now.getHours().toString().padStart(2, '0');
+const minutes = now.getMinutes().toString().padStart(2, '0');
+const seconds = now.getSeconds().toString().padStart(2, '0');
+
+const timestamp = `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`;
+
+const imageUrl = '/Profilbillede.jpg';
+const imagePath = 'C:\Users\steff\Desktop\Projekter\CV_Website\pageV.1\Profilbillede.jpg';
+
 app.get('/', (req, res) => {
     try {
         const count = readFileSync('./count.txt', 'utf-8');
         console.log('count: ', count)
-
+        console.log('Time: ', timestamp)
         const newCount = parseInt(count) + 1
 
         writeFileSync('./count.txt', newCount.toString());
@@ -19,6 +33,10 @@ app.get('/', (req, res) => {
         console.error('Error:', error.message);
         res.status(500).send('Internal Server Error');
     }
+});
+
+app.get(imageUrl, (req, res) => {
+    res.sendFile(path.join(__dirname, './Profilbillede.jpg'));
 });
 
 app.listen(5000, () => console.log('http://localhost:5000/'));
