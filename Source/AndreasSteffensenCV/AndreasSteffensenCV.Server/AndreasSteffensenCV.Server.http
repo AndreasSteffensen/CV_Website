@@ -1,0 +1,6 @@
+@AndreasSteffensenCV.Server_HostAddress = http://localhost:5074
+
+GET {{AndreasSteffensenCV.Server_HostAddress}}
+Accept: application/json
+
+###

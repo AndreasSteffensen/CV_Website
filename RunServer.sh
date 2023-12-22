@@ -1,0 +1,2 @@
+cd /CV_Website/Source/AndreasSteffensenCV/AndreasSteffensenCV.Server
+dotnet run AndreasSteffensenCV.Server.csproj

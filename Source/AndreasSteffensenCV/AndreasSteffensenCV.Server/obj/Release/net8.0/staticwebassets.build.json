@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "j87+bThbchbg1wxrPRl/USiwDzjyMSCcBfK8F4JvLuo=",
+  "Source": "AndreasSteffensenCV.Server",
+  "BasePath": "_content/AndreasSteffensenCV.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\steff\\Desktop\\Projekter\\CV_Website\\Source\\AndreasSteffensenCV\\andreassteffensencv.client\\andreassteffensencv.client.esproj",
+      "Version": 2,
+      "Source": "andreassteffensencv.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Release;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Release;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
