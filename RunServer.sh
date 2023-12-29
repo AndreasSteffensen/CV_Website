@@ -1,2 +1,3 @@
-cd /CV_Website/Source/AndreasSteffensenCV/AndreasSteffensenCV.Server
-dotnet run AndreasSteffensenCV.Server.csproj
+git pull 
+cd pageV.1/
+node server.js
