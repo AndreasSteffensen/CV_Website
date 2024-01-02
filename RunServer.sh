@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-git pull
-sudo /etc/init.d/nginx start
-cd pageV.1/
-node server.js
+echo 1201 | sudo -S /etc/init.d/nginx start
+node /home/steff/CV_Website/pagev1/server.js

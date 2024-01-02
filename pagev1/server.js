@@ -21,14 +21,14 @@ function getTimestamp()
 
 app.get('/', (req, res) => {
     try {
-        const count = readFileSync('home/steff/CV_Website/pagev1/count.txt', 'utf-8');
+        const count = readFileSync('/home/steff/CV_Website/pagev1/count.txt', 'utf-8');
         console.log('count: ', count)
         console.log('Time: ', getTimestamp())
         const newCount = parseInt(count) + 1
 
-        writeFileSync('./count.txt', newCount.toString());
+        writeFileSync('/home/steff/CV_Website/pagev1/count.txt', newCount.toString());
 
-        res.sendFile(path.join(__dirname, 'home/steff/CV_Website/pagev1/index.html'));
+        res.sendFile(path.join(__dirname, './index.html'));
     }
     catch (error) {
         console.error('Error:', error.message);
