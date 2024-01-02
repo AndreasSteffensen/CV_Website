@@ -21,14 +21,14 @@ function getTimestamp()
 
 app.get('/', (req, res) => {
     try {
-        const count = readFileSync('./count.txt', 'utf-8');
+        const count = readFileSync('home/steff/CV_Website/pagev1/count.txt', 'utf-8');
         console.log('count: ', count)
         console.log('Time: ', getTimestamp())
         const newCount = parseInt(count) + 1
 
         writeFileSync('./count.txt', newCount.toString());
 
-        res.sendFile(path.join(__dirname, './index.html'));
+        res.sendFile(path.join(__dirname, 'home/steff/CV_Website/pagev1/index.html'));
     }
     catch (error) {
         console.error('Error:', error.message);
@@ -37,7 +37,7 @@ app.get('/', (req, res) => {
 });
 
 app.get(imageUrl, (req, res) => {
-    res.sendFile(path.join(__dirname, './Profilbillede.jpg'));
+    res.sendFile(path.join(__dirname, 'home/steff/CV_Website/pagev1/Profilbillede.jpg'));
 });
 
 app.listen(5000, () => console.log('Server is running visit https://andreasgnsteffensen.com'));
