@@ -1,10 +1,15 @@
-const { readFileSync, writeFileSync } = require('fs');
+const fs = require('fs');
 
 const express = require('express');
 const path = require('path');
 const app = express();
 
+const outputLog = fs.createWriteStream('/home/steff/CV_Website/pagev1/outputLog.log');
+const errorsLog = fs.createWriteStream('/home/steff/CV_Website/pagev1/errorsLog.log');
+const consoler = new console.Console(outputLog, errorsLog);
+
 const imageUrl = '/Profilbillede.jpg';
+
 function getTimestamp()
 {
     const now = new Date();
@@ -22,8 +27,8 @@ function getTimestamp()
 app.get('/', (req, res) => {
     try {
         const count = readFileSync('/home/steff/CV_Website/pagev1/count.txt', 'utf-8');
-        console.log('count: ', count)
-        console.log('Time: ', getTimestamp())
+        consoler.log('count: ', count);
+        consoler.log('Time: ', getTimestamp());
         const newCount = parseInt(count) + 1
 
         writeFileSync('/home/steff/CV_Website/pagev1/count.txt', newCount.toString());
@@ -31,7 +36,7 @@ app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, './index.html'));
     }
     catch (error) {
-        console.error('Error:', error.message);
+        consoler.error('Error:', error.message);
         res.status(500).send('Internal Server Error');
     }
 });
